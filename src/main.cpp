@@ -19,10 +19,9 @@ void setup() {
 void loop() {
   // Update button state
   const float value = analogRead(A0);
-  Serial.println("Analog Read Value: " + String(value));
   float voltage = (value / 4095.0) * 3.3;
 
-  
+
   Serial.println("Analog Read voltage: " + String(voltage));
   // Small delay to prevent overwhelming the serial output
   delay(100);
